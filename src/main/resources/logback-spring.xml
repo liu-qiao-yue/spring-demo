@@ -49,7 +49,7 @@
 			<encoder class="net.logstash.logback.encoder.LogstashEncoder">
 				<includeCallerData>true</includeCallerData>
 				<includeMdcKeyName>X-Request-ID</includeMdcKeyName>
-				<customFields>{"type":"jetty_log","program":"demo-sim"}
+				<customFields>{"type":"jetty_log","program":"demog-sim"}
 				</customFields>
 			</encoder>
 		</appender>
