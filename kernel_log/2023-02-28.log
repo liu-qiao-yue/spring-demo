@@ -1,0 +1,31 @@
+2023-02-28 19:38:58.671 [DEBUG]  org.springframework.boot.availability.ApplicationAvailabilityBean onApplicationEvent - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2023-02-28 19:38:58.674 [DEBUG]  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f6c03cb, started on Sat Feb 25 22:24:11 CST 2023
+2023-02-28 19:38:58.674 [DEBUG]  org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver$DefaultResolver logKeyFound - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2023-02-28 19:38:58.676 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor stop - Stopping beans in phase 2147483647
+2023-02-28 19:38:58.678 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor lambda$doStop$3 - Bean 'webServerGracefulShutdown' completed its stop procedure
+2023-02-28 19:38:58.678 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor stop - Stopping beans in phase 2147483646
+2023-02-28 19:39:00.031 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor lambda$doStop$3 - Bean 'webServerStartStop' completed its stop procedure
+2023-02-28 19:39:00.031 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor stop - Stopping beans in phase -2147483647
+2023-02-28 19:39:00.031 [DEBUG]  org.springframework.context.support.DefaultLifecycleProcessor lambda$doStop$3 - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2023-02-28 19:39:00.032 [DEBUG]  org.springframework.jmx.export.annotation.AnnotationMBeanExporter destroy - Unregistering JMX-exposed beans on shutdown
+2023-02-28 19:39:00.032 [DEBUG]  org.springframework.jmx.export.annotation.AnnotationMBeanExporter unregisterBeans - Unregistering JMX-exposed beans
+2023-02-28 19:39:00.033 [DEBUG]  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-28 19:39:00.033 [INFO ]  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28 19:39:00.033 [DEBUG]  org.hibernate.internal.SessionFactoryImpl close - HHH000031: Closing
+2023-02-28 19:39:00.033 [DEBUG]  org.hibernate.type.spi.TypeConfiguration$Scope unsetSessionFactory - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@578be7f0] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@438aaa9f]
+2023-02-28 19:39:00.034 [DEBUG]  org.hibernate.service.internal.AbstractServiceRegistryImpl deRegisterChild - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2023-02-28 19:39:00.036 [DEBUG]  org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl deRegisterChild - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2023-02-28 19:39:00.037 [INFO ]  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2023-02-28 19:39:00.037 [DEBUG]  com.zaxxer.hikari.pool.HikariPool logPoolState - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-02-28 19:39:00.038 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1d1e92c5: (connection evicted)
+2023-02-28 19:39:00.038 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3944fbbc: (connection evicted)
+2023-02-28 19:39:00.039 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@22489995: (connection evicted)
+2023-02-28 19:39:00.040 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43889a71: (connection evicted)
+2023-02-28 19:39:00.040 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4abae686: (connection evicted)
+2023-02-28 19:39:00.041 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1859b214: (connection evicted)
+2023-02-28 19:39:00.041 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6683be80: (connection evicted)
+2023-02-28 19:39:00.042 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@27e64c93: (connection evicted)
+2023-02-28 19:39:00.042 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1a431810: (connection evicted)
+2023-02-28 19:39:00.043 [DEBUG]  com.zaxxer.hikari.pool.PoolBase quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4fec29d5: (connection evicted)
+2023-02-28 19:39:00.044 [DEBUG]  com.zaxxer.hikari.pool.HikariPool logPoolState - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-02-28 19:39:00.044 [INFO ]  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
