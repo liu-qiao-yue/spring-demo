@@ -3,43 +3,24 @@ server:
   port: 8089
 
 spring:
-  application:
-    name: self-spring-demo
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     #数据库url
     url: jdbc:mysql://localhost:3306/spring-demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=GMT%2B8&useSSL=false
     # 数据库访问账户
     username: root
     # 数据库访问密码
     password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    show-sql: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    hibernate:
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true # 如果使用JPA，这将显示SQL语句，默认我们用MyBatis，可以忽略或注释掉
+  main:
+    allow-bean-definition-overriding: true # 允许Bean定义覆盖，有时在集成第三方库时需要
 
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # MyBatis日志输出到控制台
 
-#mybatis:
-#  config-location: classpath:/persistence/mybatis-config.xml
-#  mapperLocations: classpath*:/com/stock/core/dao/CommonDao.xml
-
-#logging:
-#  config: classpath:logback.xml
-#  level:
-#    com.example: debug
-#  path: /data/logs
-
-#logging:
-#  config: classpath:logback-spring.xml
-#  level:
-#    com.example: debug
-#    org.hibernate.type.descriptor.sql.BasicBinder: trace
-log:
-  level: DEBUG
-  appender: file
-  home: kernel_log
-  stash:
-    addresses:
+logging:
+  level:
+    root: info
+    org.springframework.web: debug # 可以调整为INFO, WARN等，这里设置为DEBUG以便查看详细Web层日志
